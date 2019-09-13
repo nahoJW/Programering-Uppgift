@@ -26,11 +26,13 @@ namespace Programering_Uppgift
                 if (RandomN < WNumber)
                 {
                     Console.WriteLine("Du gissade för högt");
+                    Console.WriteLine("Gissa igen");
                 }
 
                 if (RandomN > WNumber)
                 {
                     Console.WriteLine("Du gissade för lågt");
+                    Console.WriteLine("Gissa igen");
                 }
             }
 
