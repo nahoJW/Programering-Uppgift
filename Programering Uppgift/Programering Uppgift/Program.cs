@@ -16,12 +16,6 @@ namespace Programering_Uppgift
 
                 AntalF++;//Lägger till 1 på antal försök så att det ökar med en vaje gång loopen upprepas
 
-                if (RandomN == WNumber) //Ifall det slupmässiga talet är samma som det inskrivna så händer det inom: {}
-                { 
-                     Console.WriteLine("Du vann");//Skriver att personen vann 
-                    Console.WriteLine("Antal försök: "+""+AntalF);//Skriver ut hur många gånger personen försökt
-                     break;//stoppar loopen
-                }
 
                 if (RandomN < WNumber)//Ifall det slupmässiga<inskrivna så händer det inom: {}
                 {
@@ -29,10 +23,17 @@ namespace Programering_Uppgift
                     Console.WriteLine("Gissa igen");//Skriver gissa igen
                 }
 
-                if (RandomN > WNumber) //Ifall det slupmässiga talet > det inskrivna talet så händer det inom: {}
+                else if (RandomN > WNumber) //Ifall det slupmässiga talet > det inskrivna talet så händer det inom: {}
                 {
                     Console.WriteLine("Du gissade för lågt");//Skriver att personen gissade för högt
                     Console.WriteLine("Gissa igen");//Skriver att personen ska försöka igen
+                }
+
+                else //Ifall det slupmässiga talet är samma som det inskrivna så händer det inom: {}
+                { 
+                     Console.WriteLine("Du vann");//Skriver att personen vann 
+                    Console.WriteLine("Antal försök: "+""+AntalF);//Skriver ut hur många gånger personen försökt
+                     break;//stoppar loopen
                 }
             }
 
